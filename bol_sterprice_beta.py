@@ -23,8 +23,8 @@ def token_login(client_id, client_secret):
     ]
     if token:  # add right headers
         post_header = {
-            "Accept": "application/vnd.retailer.v8+json",
-            "Content-Type": "application/vnd.retailer.v8+json",
+            "Accept": "application/vnd.retailer.v10+json",
+            "Content-Type": "application/vnd.retailer.v10+json",
             "Authorization": "Bearer " + token,
         }
         # logger.info(f"login met client {client_id}")
